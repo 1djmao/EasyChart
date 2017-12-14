@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.idjmao.easychartlib.YAxis
+        android:id="@+id/y_axis_left"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/barview"
+        app:layout_constraintBottom_toBottomOf="@id/barview"
+        app:y_gravity="left"/>
+    <com.idjmao.easychartlib.YAxis
+        android:id="@+id/y_axis_right"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="@id/barview"
+        app:layout_constraintBottom_toBottomOf="@id/barview"
+        app:y_gravity="right"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <com.idjmao.easychartlib.XAxis
+        android:id="@+id/x_axis"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/barview"
+        app:layout_constraintRight_toRightOf="@id/barview"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <com.idjmao.easychartlib.BarView
+        android:id="@+id/barview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toRightOf="@id/y_axis_left"
+        app:layout_constraintRight_toLeftOf="@id/y_axis_right"
+        app:layout_constraintBottom_toTopOf="@id/x_axis"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>

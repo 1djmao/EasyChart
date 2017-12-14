@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="BaseChartView">
-        <attr name="x_pading" format="integer"/>
+
+    <declare-styleable name="XAxis">
+        <attr name="x_textsize" format="integer"/>
+        <attr name="x_textcolor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="YAxis">
+        <attr name="y_textsize" format="integer"/>
+        <attr name="y_textcolor" format="color"/>
+        <attr name="y_gravity">
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BarView">
+        <attr name="pading" format="dimension"/>
+        <attr name="color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="BarChart">
+        <attr name="bar_pading" format="dimension"/>
         <attr name="bar_color" format="color"/>
+
+        <attr name="x_name_enable" format="boolean"/>
+        <attr name="x_name" format="string"/>
+        <attr name="x_axis_enable" format="boolean"/>
+
+        <attr name="y_name_enable" format="boolean"/>
+        <attr name="y_name" format="string"/>
+        <attr name="y_axis_enable" format="boolean"/>
     </declare-styleable>
 </resources>
